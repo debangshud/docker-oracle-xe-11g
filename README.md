@@ -88,3 +88,13 @@ ADD init.sql /docker-entrypoint-initdb.d/
 ADD script.sh /docker-entrypoint-initdb.d/
 ```
 Running order is alphabetically. 
+
+Create a schema named smith:
+```
+CREATE USER smith IDENTIFIED BY password;
+GRANT CONNECT TO smith;
+GRANT CONNECT, RESOURCE, DBA TO smith;
+GRANT CREATE SESSION TO smith;
+GRANT UNLIMITED TABLESPACE TO smith;
+```
+
