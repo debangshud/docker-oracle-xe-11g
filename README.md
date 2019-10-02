@@ -3,20 +3,6 @@ docker-oracle-xe-11g
 
 Oracle Express Edition 11g Release 2 on Ubuntu 18.04 LTS
 
-<del>This **Dockerfile** is a [trusted build](https://registry.hub.docker.com/u/wnameless/oracle-xe-11g/) of [Docker Registry](https://registry.hub.docker.com/).</del>
-
-<del>Since 2019-Feb-13(the Valentine's day eve) this docker image has been removed by DockerHub due to the Docker DMCA Takedown Notice from the Copyright owner which is the Oracle.</del>
-
-<del>Happy Valentine's day!</del>
-
-```diff
-+ The new DockerHub [wnameless/oracle-xe-11g-r2] has been released, because
-+ the old [wnameless/oracle-xe-11g] is banned by DockerHub and I cannot restore it.
-+ Thanks for the help from the staff in Oracle with my DMCA Takedown issue, however this problem
-+ is totally ignored by the DockerHub and I barely can't do anything but to open a new repo.
-+ Sep 29 2019
-```
-
 ## Installation(Local)
 ```
 git clone https://github.com/wnameless/docker-oracle-xe-11g.git
