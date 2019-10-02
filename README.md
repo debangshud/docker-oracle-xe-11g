@@ -43,21 +43,25 @@ For APEX user:
 docker run -d -p 49161:1521 -p 8080:8080 wnameless/oracle-xe-11g-r2
 ```
 
+For persisted volume, create a directory /opt/data/oracle/11g-r2 and change permission to R/W:
+```
+docker run -d \
+-p 49160:22 \
+-p 49161:1521 \
+-p 18080:8080 \
+-e ORACLE_ALLOW_REMOTE=true \
+-e ORACLE_DISABLE_ASYNCH_IO=true \
+-e ORACLE_ENABLE_XDB=true \
+--mount source=oracle_vol,target=/opt/data/oracle/11g-r2 \
+wnameless/oracle-xe-11g-r2
+```
+
+
+
 ```
 # Login http://localhost:8080/apex/apex_admin with following credential:
 username: ADMIN
 password: admin
-```
-
-For latest APEX(18.1) user, please pull wnameless/oracle-xe-11g-r2:18.04-apex first:
-```
-docker run -d -p 49161:1521 -p 8080:8080 wnameless/oracle-xe-11g:18.04-apex
-```
-
-```
-# Login http://localhost:8080/apex/apex_admin with following credential:
-username: ADMIN
-password: Oracle_11g
 ```
 
 By default, the password verification is disable(password never expired)<br/>
