@@ -62,6 +62,8 @@ wnameless/oracle-xe-11g-r2
 # Login http://localhost:8080/apex/apex_admin with following credential:
 username: ADMIN
 password: admin
+
+Password changed to Barclays1$
 ```
 
 By default, the password verification is disable(password never expired)<br/>
